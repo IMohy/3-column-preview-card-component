@@ -1,0 +1,147 @@
+:root {
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: var(--Transparent-white);
+    font-size: 15px;
+}
+
+.container {
+    padding: 30px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.container .orange {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--Bright-orange);
+}
+
+.container .cyan {
+    background-color: var(--Dark-cyan);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container .dark {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+img {
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 20px;
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--Transparent-white);
+}
+
+button {
+    border: none;
+    background-color: white;
+    margin-left: 20px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-transform: capitalize;
+    font-weight: 700;
+
+}
+
+.container .orange button {
+    color: var(--Bright-orange);
+}
+
+.container .cyan button {
+    color: var(--Dark-cyan);
+}
+
+.container .dark button {
+    color: var(--Very-dark-cyan);
+}
+
+.container button:hover {
+    background-color: transparent;
+    outline: 1px solid white;
+}
+
+.container .orange button:hover {
+    color: white;
+}
+
+.container .dark button:hover {
+    color: white;
+}
+
+.container .cyan button:hover {
+    color: white;
+}
+
+.attribution {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .container .orange {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .container .dark {
+        border-radius: 0px 10px 10px 0px;
+
+    }
+}
